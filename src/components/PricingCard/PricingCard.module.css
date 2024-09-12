@@ -1,0 +1,141 @@
+.h1_tag {
+    font-size: 30px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    max-width: 520px;
+    word-wrap: break-word;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.highlight {
+    background-color: #2cf6a9e4;
+    color: #010101;
+    padding: 5px 20px;
+    border-radius: 78px;
+}
+
+.pricingContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* Added to allow wrapping on small screens */
+}
+
+.card {
+    background-color: #dddddd1f;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.card:hover {
+    border: 2px solid #02cbba;
+}
+
+.cardHeader {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #12c46b;
+}
+
+.details {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.purchaseButton {
+    background-color: #12c46b;
+    color: #171717;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+    cursor: pointer;
+}
+
+.purchaseButton:hover {
+    background-color: #0B3D0F;
+}
+
+.list {
+    text-align: left;
+    margin: 15px 0;
+}
+
+.listItem {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkmark {
+    color: #12c46b;
+    margin-right: 10px;
+}
+
+/* Responsive Styling for smaller screens */
+@media (max-width: 768px) {
+    .pricingContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+        /* Limits card width for better display on smaller screens */
+    }
+
+    .h1_tag {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1_tag {
+        font-size: 22px;
+        margin-top: 30px;
+        max-width: 150px;
+    }
+
+    .highlight {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .price {
+        font-size: 1.8rem;
+    }
+
+    .cardHeader {
+        font-size: 1rem;
+    }
+}
